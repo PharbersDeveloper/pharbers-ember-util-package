@@ -22,8 +22,8 @@ export default Controller.extend({
 
 		// this.get('cookie').write('hi', '123')
 
-		let time = dateFormat(new Date(), 'YYYY-MM-DD hh:mm:ss')
-		console.info(time)
+		// let time = dateFormat(new Date(), 'YYYY-MM-DD hh:mm:ss')
+		// console.info(time)
 
 		// // RSA.setDefaultKeySize(1024)
 		// let PublicKey = ``
