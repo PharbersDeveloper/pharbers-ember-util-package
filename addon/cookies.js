@@ -1,27 +1,15 @@
 import EmberObject from '@ember/object';
-import { inject } from '@ember/service';
+import { inject as service } from '@ember/service';
 
-const cookieReadEmberObject =  EmberObject.extend({
-	cookies: inject(),
+export default EmberObject.extend({
+	cookies: service(),
 	read(key) {
 		return this.get('cookies').read(key);
-	}
-});
-
-const cookieWriteEmberObject =  EmberObject.extend({
-	cookies: inject(),
-	// write(key, data, options) {
-	// 	this.get('cookies').write(key, data, options);
-	// }
+	},
 	write(key, data, options) {
-		window.console.info(this)
-	}
-
-
-})
-
-const cookieCleanEmberObject =  EmberObject.extend({
-	cookies: inject(),
+		window.console.info(this.get('cookies'))
+		this.get('cookies').write(key, data, options);
+	},
 	cleans(...keys) {
 		let that = this;
 
@@ -32,14 +20,3 @@ const cookieCleanEmberObject =  EmberObject.extend({
 		};
 	}
 });
-
-
-let read = cookieReadEmberObject.create().read;
-let write = cookieWriteEmberObject.create().get('write');
-let cleans = cookieCleanEmberObject.create().cleans;
-
-export {
-	read,
-	write,
-	cleans
-}

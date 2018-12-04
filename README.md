@@ -1,25 +1,45 @@
 # pharbers-ember-util-package
 
-This README outlines the details of collaborating on this Ember addon.
+## Pharbers Ember 工具包，目前正处于开发阶段，存在不稳定与功能增删
 
-## Installation
+#### 目前包含：
+* Array
+	* groupBy
+	* flat2OneDimensional
+	* flat
+* Number
+	* numberFormatThousands
+* Date
+	* dateFormat
+* cookie
+	* read
+	* write
+	* cleans
+
+> 具体使用
+>> 1. Download该项目
+>> 2. 在终端执行Shell `yarn or npm install`
+>> 3. 终端执行Shell `ember s`
+>> 4. 启动结束访问：http://localhost:4200
+
+### Installation
 
 * `git clone <repository-url>` this repository
 * `cd pharbers-ember-util-package`
 * `npm install`
 
-## Running
+### Running
 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-## Running Tests
+### Running Tests
 
 * `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
-## Building
+### Building
 
 * `ember build`
 

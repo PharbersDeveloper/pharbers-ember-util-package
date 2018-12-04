@@ -2,8 +2,7 @@ import Controller from '@ember/controller';
 import { RSA } from 'pharbers-ember-util-package/security/rsa/RSA';
 import { groupBy, flat2OneDimensional, flat } from 'pharbers-ember-util-package/array';
 import { numberFormatThousands } from 'pharbers-ember-util-package/number';
-import { read, write, cleans } from 'pharbers-ember-util-package/cookies';
-
+import { dateFormat } from 'pharbers-ember-util-package/date';
 
 
 export default Controller.extend({
@@ -21,14 +20,10 @@ export default Controller.extend({
 		// console.info(flat)
 		// console.info(numberFormatThousands)
 
+		// this.get('cookie').write('hi', '123')
 
-		// console.info(read)
-		// console.info(write)
-		// console.info(cleans)
-
-
-		write('hi', '123')
-
+		let time = dateFormat(new Date(), 'YYYY-MM-DD hh:mm:ss')
+		console.info(time)
 
 		// // RSA.setDefaultKeySize(1024)
 		// let PublicKey = ``
