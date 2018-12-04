@@ -12,14 +12,14 @@
 * Date
 	* dateFormat
 * cookie
-	* read
+	* read
 	* write
 	* cleans
 
 > 具体使用
 >> 1. Download该项目
->> 2. 在终端执行Shell `yarn or npm install`
->> 3. 终端执行Shell `ember s`
+>> 2. 在终端执行 Shell `yarn or npm install`
+>> 3. 终端执行 Shell `ember s`
 >> 4. 启动结束访问：http://localhost:4200
 
 ### Installation
