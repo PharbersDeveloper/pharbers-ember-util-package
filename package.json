@@ -1,6 +1,6 @@
 {
 	"name": "pharbers-ember-util-package",
-	"version": "1.0.0_Alpha",
+	"version": "0.0.1_Alpha",
 	"description": "The default blueprint for ember-cli addons.",
 	"keywords": [
 		"ember-addon"
