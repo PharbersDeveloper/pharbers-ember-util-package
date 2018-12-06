@@ -3,6 +3,7 @@ import { RSA } from 'pharbers-ember-util-package/security/rsa/RSA';
 import { groupBy, flat2OneDimensional, flat } from 'pharbers-ember-util-package/array';
 import { numberFormatThousands } from 'pharbers-ember-util-package/number';
 import { dateFormat } from 'pharbers-ember-util-package/date';
+import { version } from 'pharbers-ember-util-package/browser';
 
 
 export default Controller.extend({
@@ -13,6 +14,9 @@ export default Controller.extend({
 	actions: {
 	},
 	JSRSA() {
+		// console.info(version())
+		// console.info(this.get('hash').md5())
+		// console.info(this.get('hash').uuid())
 		// console.info(RSA)
 
 		// console.info(groupBy)
