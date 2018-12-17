@@ -7,7 +7,6 @@ export default EmberObject.extend({
 		return this.get('cookies').read(key);
 	},
 	write(key, data, options) {
-		window.console.info(this.get('cookies'))
 		this.get('cookies').write(key, data, options);
 	},
 	cleans(...keys) {
